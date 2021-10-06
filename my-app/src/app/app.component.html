@@ -8,14 +8,20 @@
     <div class="app-servers"></div>
   </div>
   <div class="row">
-
-
     <div class="app-box">
       <app-warningbox></app-warningbox>
     </div>
     <div class="app-box">
       <app-successbox></app-successbox>
     </div>
+  </div>
+  <div class="row">
+    <h3>Username</h3>
+    <input type="text"
+      class="form-control"
+      [(ngModel)]="userName">
+    <p>{{userName}}</p>
+    <button class="btn btn-primary" [disabled]="userName === ''" (click)="onClearUserName()">Clear Username</button>
   </div>
 </div>
 

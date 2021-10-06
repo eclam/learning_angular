@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css',]
 })
 export class AppComponent {
+  userName = '';
+  onUpdateUserName(event: Event) {
+    this.userName = (<HTMLInputElement>event.target).value;
+  }
+
+  onClearUserName(){
+    this.userName = '';
+  }
 
 }

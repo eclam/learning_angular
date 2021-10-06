@@ -14,8 +14,7 @@
     <input
       type="text"
       class="form-control"
-      [(ngModel)]="serverName"
-      >
+      [(ngModel)]="serverName">
     <p>{{serverName}}</p>
     <button class="btn btn-primary" [disabled]="!allowNewServer" (click)="onCreateServer()">Add Server</button>
     <!-- <p [innerText]="allowNewServer"></p> -->
