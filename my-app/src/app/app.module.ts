@@ -8,6 +8,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ServersComponent } from './servers/servers.component';
+import { A3Component } from './a3/a3.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ServersComponent } from './servers/servers.component';
     ServerComponent,
     ServersComponent,
     WarningBoxComponent,
-    SuccessBoxComponent
+    SuccessBoxComponent,
+    A3Component
   ],
   imports: [
     BrowserModule,

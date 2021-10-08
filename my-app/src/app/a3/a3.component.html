@@ -1,0 +1,11 @@
+<button class="btn btn-primary" (click)="onToggleContainer()">Show / Hide  Details</button>
+<div *ngIf="showContainer">
+  <p>Password is : HERPA-DERP</p>
+</div>
+<!-- <app-a3-output *ngFor="let toggle in toggles" [numCounter]="toggle"></app-a3-output> -->
+<div *ngFor="let toggle of toggles">
+  <p [ngStyle]="{'backgroundColor': getColor(toggle)}"
+      [ngClass]="{fifthPlus: getColor(toggle) === 'blue'}">
+    {{ toggle }}
+  </p>
+</div>
