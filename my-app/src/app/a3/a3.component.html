@@ -3,9 +3,9 @@
   <p>Password is : HERPA-DERP</p>
 </div>
 <!-- <app-a3-output *ngFor="let toggle in toggles" [numCounter]="toggle"></app-a3-output> -->
-<div *ngFor="let toggle of toggles">
-  <p [ngStyle]="{'backgroundColor': getColor(toggle)}"
-      [ngClass]="{fifthPlus: getColor(toggle) === 'blue'}">
+<div *ngFor="let toggle of toggles; let i = index">
+  <p [ngStyle]="{'backgroundColor': getColor(i)}"
+      [ngClass]="{fifthPlus: getColor(i) === 'blue'}">
     {{ toggle }}
   </p>
 </div>

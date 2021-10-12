@@ -14,8 +14,9 @@ export class A3Component {
 
   onToggleContainer(){
     this.showContainer = !this.showContainer;
-    this.counter++;
-    this.toggles.push(this.counter);
+    // this.counter++;
+    // this.toggles.push(this.counter);
+    this.toggles.push(new Date());
   }
 
   getColor(num:Number){
