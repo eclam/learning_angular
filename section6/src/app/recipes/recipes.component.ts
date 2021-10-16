@@ -6,7 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./recipes.component.css']
 })
 export class RecipesComponent implements OnInit {
-  @Input() showRecipes = false;
+  // @Input() showRecipes = false;
 
   constructor() { }
 

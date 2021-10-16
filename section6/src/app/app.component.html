@@ -5,8 +5,12 @@
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <app-recipes [showRecipes]="showRecipes"></app-recipes>
-      <app-shopping-list [showShoppingList]="showShoppingList"></app-shopping-list>
+      <ng-container *ngIf="showRecipes === true">
+        <app-recipes></app-recipes>
+      </ng-container>
+      <ng-container *ngIf="showShoppingList === true">
+        <app-shopping-list></app-shopping-list>
+      </ng-container>
     </div>
   </div>
 </div>
