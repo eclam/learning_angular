@@ -7,9 +7,7 @@ import { Component, Input, OnInit, ViewChild, ElementRef } from '@angular/core';
 })
 export class EvenComponent implements OnInit {
   @Input() interval: number;
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
