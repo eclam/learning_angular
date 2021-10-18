@@ -9,7 +9,7 @@ export class BasicHighlightDirective implements OnInit {
   }
 
   ngOnInit() {
-    this.elementRef.nativeElement.style.backgroundColor = 'green';
+    this.elementRef.nativeElement.style.backgroundColor = 'green'; // Not good practice to directly access elements
   }
 
 }
