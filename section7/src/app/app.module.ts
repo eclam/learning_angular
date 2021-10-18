@@ -1,3 +1,4 @@
+import { UnlessDirective } from './unless.directive';
 import { BetterHighlightDirective } from './better-highlight/better-highlight.directive';
 import { BasicHighlightDirective } from './basic-highlight/basic-highlight.directive';
 import { BrowserModule } from '@angular/platform-browser';
@@ -11,7 +12,8 @@ import { AppComponent } from './app.component';
   declarations: [
     AppComponent,
     BasicHighlightDirective,
-    BetterHighlightDirective
+    BetterHighlightDirective,
+    UnlessDirective
   ],
   imports: [
     BrowserModule,
