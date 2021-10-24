@@ -31,6 +31,11 @@ export class RecipeService {
     return this.recipes.slice(); // get a copy of the private Recipes[]
   }
 
+  getRecipe(idx: number){
+    return this.recipes[idx];
+  }
+
+
   addIngredientsToShoppingList(ingredients:Ingredient[]){
     this.shoppingListService.addIngredients(ingredients);
   }
